@@ -17,9 +17,12 @@ jobs:
       run: sudo apt-get update && sudo apt-get install -y build-essential
 
     - name: Build C program
-      run: gcc -o my_program hello.c
+      run: |
+        cd test  # Change to the directory where your hello.c is located
+        gcc -o my_program hello.c
 
     - name: Run tests
       run: |
-        gcc -o test_program test/main.c
+        cd test  # Change to the directory where your test/main.c is located
+        gcc -o test_program main.c
         ./test_program
