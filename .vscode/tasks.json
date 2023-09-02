@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc",  // Or your preferred compiler command
+            "args": [
+                "-g",             // Generate debugging information
+                "-o",
+                "./test/main",           // Output file name (without extension)
+                "./test/main.c"          // Your C source file
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
