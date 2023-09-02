@@ -18,7 +18,8 @@ jobs:
 
     - name: Build C program
       run: |
-        gcc -o my_program hello.c
+        cd test  # Change to the 'test' directory
+        gcc -o my_program main.c
 
     - name: Run tests
       run: |
