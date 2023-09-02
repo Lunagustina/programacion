@@ -18,11 +18,11 @@ jobs:
 
     - name: Build C program
       run: |
-        cd test  # Change to the directory where your hello.c is located
+        cd $GITHUB_WORKSPACE/test  # Change to the 'test' directory
         gcc -o my_program hello.c
 
     - name: Run tests
       run: |
-        cd test  # Change to the directory where your test/main.c is located
+        cd $GITHUB_WORKSPACE/test  # Change to the 'test' directory
         gcc -o test_program main.c
         ./test_program
