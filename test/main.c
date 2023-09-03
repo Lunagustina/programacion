@@ -7,11 +7,11 @@ int main()
     {
         if (i % 2)
         {
-            printf("Hello Agustina!: %d\n", i)
+            printf("Hello Agustina!: %d\n", i);
         }
         else
         {
-            printf("Hello Lucas!: %d\n", i)
+            printf("Hello Lucas!: %d\n", i);
         }
     }
     
