@@ -22,17 +22,27 @@
 
 // Función para determinar el cuadrante
 int CUADRANTE(int x, int y) {
-    if (x == 0 || y == 0) {
-        return 0; // Centro
-    } else if (x > 0 && y > 0) {
-        return 1; // Cuadrante 1
-    } else if (x < 0 && y > 0) {
-        return 2; // Cuadrante 2
-    } else if (x < 0 && y < 0) {
-        return 3; // Cuadrante 3
-    } else {
-        return 4; // Cuadrante 4
+    if ((x == 0 && y != 0) || (x != 0 && y == 0)) {
+        return -1; // Ejes
     }
+    
+    if (x == 0 && y == 0) {
+        return 0; // Centro
+    }
+    
+    if (x > 0 && y > 0) {
+        return 1; // Cuadrante 1
+    }
+    
+    if (x < 0 && y > 0) {
+        return 2; // Cuadrante 2
+    }
+    
+    if (x < 0 && y < 0) {
+        return 3; // Cuadrante 3
+    }
+    
+    return 4; // Cuadrante 4
 }
 
 // Función para calcular el puntaje
