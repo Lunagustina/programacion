@@ -62,7 +62,7 @@ int main() {
 
         for (int i = 0; i < 5; i++)
         {
-            int x, y;
+            // int x, y;
             // printf("Ingrese las coordenadas X-Y del disparo %d para el participante %d: ", i + 1, numero_participante);
             // scanf("%d %d", &x, &y);
 
