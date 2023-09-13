@@ -46,26 +46,31 @@ int main() {
     int ganador;
     int disparos_centro_total = 0;
 
+    // Descomentar esto
     // printf("Ingrese el número del participante (negativo para terminar): ");
     // scanf("%d", &numero_participante);
 
+    // solo para test
     // Valores de entrada simulados para pruebas
     int valores_de_entrada[][5] = {
         {1, 2, 3, 4, 5},  // Participante 1
         {-1, -2, -3, -4, -5},  // Participante 2
     };
 
+    // Usar el while, el for es solo para test, borralo
     // while (numero_participante >= 0)
-    for (int p = 0; p < 2; p++)
+    for (int numero_participante = 0 ; numero_participante < 2 ; numero_participante ++)
     {
         int cuadrante1 = 0, cuadrante2 = 0, cuadrante3 = 0, cuadrante4 = 0, centro = 0;
 
         for (int i = 0; i < 5; i++)
         {
+            // Descomentar esto
             // int x, y;
             // printf("Ingrese las coordenadas X-Y del disparo %d para el participante %d: ", i + 1, numero_participante);
             // scanf("%d %d", &x, &y);
 
+            // Borrar las dos lineas, solo para test
             int x = valores_de_entrada[p][i];
             int y = valores_de_entrada[p][i];
 
@@ -104,6 +109,7 @@ int main() {
 
         disparos_centro_total += centro;
 
+        // Descomentar esto
         // printf("Ingrese el número del participante (negativo para terminar): ");
         // scanf("%d", &numero_participante);
     }
