@@ -53,8 +53,8 @@ int main() {
     // solo para test
     // Valores de entrada simulados para pruebas
     int valores_de_entrada[][5] = {
-        {1, 2, 3, 4, 5},  // Participante 1
-        {-1, -2, -3, -4, -5},  // Participante 2
+        {1, 0, 3, 4, 5},  // Participante 1
+        {-1, -2, -3, -4, 0},  // Participante 2
     };
 
     // Usar el while, el for es solo para test, borralo
@@ -71,8 +71,8 @@ int main() {
             // scanf("%d %d", &x, &y);
 
             // Borrar las dos lineas, solo para test
-            int x = valores_de_entrada[p][i];
-            int y = valores_de_entrada[p][i];
+            int x = valores_de_entrada[numero_participante][i];
+            int y = valores_de_entrada[numero_participante][i];
 
             int cuadrante = CUADRANTE(x, y);
 
