@@ -47,6 +47,6 @@ printf ("Matriz intercalada: ");
 
     for ( int i=0 ; i<ce ; i++)
         {
-        printf ("%d", &v[i]);
+        printf ("%d", v[i]);
         }
 }
