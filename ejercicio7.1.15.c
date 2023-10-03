@@ -96,7 +96,7 @@ void ventasDiarias(int vec_cod[], int vec_stock[], int ce)
 
         if(vec_stock[pos]>cant)
         {
-            vec_stock-=cant;
+            vec_stock[pos]-=cant;
         }
 
         i++;
