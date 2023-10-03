@@ -38,7 +38,7 @@ int verifRango2(int lim_inf, int lim_sup)
     int cant;
 
     do{
-        scanf("%d\n", &cant);
+        scanf("%d", &cant);
 
     }while(cant<lim_inf || cant>lim_sup);
 
@@ -50,7 +50,8 @@ int mayorIgual_0()
     int stock;
 
     do{
-        scanf("%d\n", &stock);
+        printf("Ingrese el stock: \n");
+        scanf("%d", &stock);
 
     }while(stock<0);
 
@@ -110,7 +111,8 @@ int verifRango(int lim_inf, int lim_sup, int cf)
     int cod;
 
     do{
-        scanf("%d\n", &cod);
+        printf("Ingrese el codigo: \n");
+        scanf("%d", &cod);
 
         if(cod==0)
         {
@@ -145,7 +147,7 @@ void informarStock(int vec_cod[], int vec_stock[], int ce)
 {
     for(int i=0; i<ce; i++)
     {
-        printf("Codigo: %d\t Stock: %d\t", &vec_cod[i], &vec_stock[i]);
+        printf("Codigo: %d\t Stock: %d\n", vec_cod[i], vec_stock[i]);
     }
     return 0;
 }
@@ -163,7 +165,7 @@ void informarMaximo(int vec_cod[], int vec_stock[], int ce)
             cod_M= vec_cod[i];
         }
     }
-    printf("El codigo del producto de stock mas alto es: %d", cod_M);
+    printf("El codigo del producto de stock mas alto es: %d\n", cod_M);
 }
 
 void informarPromedio(int vec_cod[], int vec_stock[], int ce)
@@ -181,11 +183,11 @@ void informarPromedio(int vec_cod[], int vec_stock[], int ce)
     {
         if(vec_stock[i]>promedio)
         {
-            printf("Producto que supera promedio: %d", vec_cod[i]);
+            printf("Producto que supera promedio: %d\n", vec_cod[i]);
         }
         else
         {
-            printf("No hay producto que supere el promedio");
+            printf("No hay producto que supere el promedio\n");
         }
     }
     return 0;
