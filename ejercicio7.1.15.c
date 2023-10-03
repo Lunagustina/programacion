@@ -66,6 +66,7 @@ void cargaVecParalelos(int vec_cod[], int vec_stock[], int ce)
 
     for(int i=0; i<ce; i++)
     {
+        printf("Ingrese el codigo\n");
         cod= verifRango2(301, 900);
         stock= mayorIgual_0();
 
